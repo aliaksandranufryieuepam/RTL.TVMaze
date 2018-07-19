@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  rtl.tvmaze.api:
+    image: ${DOCKER_REGISTRY}rtltvmazeapi
+    build:
+      context: .
+      dockerfile: RTL.TVMaze.API/Dockerfile

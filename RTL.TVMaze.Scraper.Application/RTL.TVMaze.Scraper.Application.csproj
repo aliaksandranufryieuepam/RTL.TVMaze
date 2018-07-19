@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RTL.TVMaze.Scraper.Application.Contract\RTL.TVMaze.Scraper.Application.Contract.csproj" />
+    <ProjectReference Include="..\RTL.TVMaze.Scraper.Application.Dependencies.Contract\RTL.TVMaze.Scraper.Application.Dependencies.Contract.csproj" />
+  </ItemGroup>
+
+</Project>
