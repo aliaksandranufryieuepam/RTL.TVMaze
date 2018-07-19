@@ -4,4 +4,9 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RTL.TVMaze.Application.Contract\RTL.TVMaze.Application.Contract.csproj" />
+    <ProjectReference Include="..\RTL.TVMaze.Application.Dependencies.Contract\RTL.TVMaze.Application.Dependencies.Contract.csproj" />
+  </ItemGroup>
+
 </Project>
