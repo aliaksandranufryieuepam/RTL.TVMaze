@@ -3,35 +3,35 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.API", "RTL.TVMaze.API\RTL.TVMaze.API.csproj", "{03F65B37-2A88-4D1B-B9C4-DAC2E4F9561D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.API", "RTL.TVMaze.API\RTL.TVMaze.API.csproj", "{03F65B37-2A88-4D1B-B9C4-DAC2E4F9561D}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{259DA922-6A71-4C84-BBBE-3BAC7CC21EA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Scraper.Application", "RTL.TVMaze.Scraper.Application\RTL.TVMaze.Scraper.Application.csproj", "{9FFD14F7-7E19-41D4-B8EF-91EBAA6059AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Scraper.Application", "RTL.TVMaze.Scraper.Application\RTL.TVMaze.Scraper.Application.csproj", "{9FFD14F7-7E19-41D4-B8EF-91EBAA6059AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Application", "RTL.TVMaze.Application\RTL.TVMaze.Application.csproj", "{EB201FFC-9BCC-48ED-B67A-FA476D548197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Application", "RTL.TVMaze.Application\RTL.TVMaze.Application.csproj", "{EB201FFC-9BCC-48ED-B67A-FA476D548197}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Application.Contract", "RTL.TVMaze.Application.Contract\RTL.TVMaze.Application.Contract.csproj", "{C080EB8B-2981-4F5C-B70C-5E83F0EBC587}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Application.Contract", "RTL.TVMaze.Application.Contract\RTL.TVMaze.Application.Contract.csproj", "{C080EB8B-2981-4F5C-B70C-5E83F0EBC587}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Application.Dependencies.Contract", "RTL.TVMaze.Application.Dependencies.Contract\RTL.TVMaze.Application.Dependencies.Contract.csproj", "{8D0F9E42-30FE-424E-967B-A7851B33B238}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Application.Dependencies.Contract", "RTL.TVMaze.Application.Dependencies.Contract\RTL.TVMaze.Application.Dependencies.Contract.csproj", "{8D0F9E42-30FE-424E-967B-A7851B33B238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Scraper.Application.Dependencies.Contract", "RTL.TVMaze.Scraper.Application.Dependencies.Contract\RTL.TVMaze.Scraper.Application.Dependencies.Contract.csproj", "{98F2B91F-DC91-49AB-82EF-CF7FAE64028D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Scraper.Application.Dependencies.Contract", "RTL.TVMaze.Scraper.Application.Dependencies.Contract\RTL.TVMaze.Scraper.Application.Dependencies.Contract.csproj", "{98F2B91F-DC91-49AB-82EF-CF7FAE64028D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Scraper.Application.Dependencies.TVMaze", "RTL.TVMaze.Scraper.Application.Dependencies.TVMaze\RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.csproj", "{422F5BA1-09D5-4228-8286-30CEC4AC9648}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Scraper.Application.Dependencies.TVMaze", "RTL.TVMaze.Scraper.Application.Dependencies.TVMaze\RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.csproj", "{422F5BA1-09D5-4228-8286-30CEC4AC9648}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scrapper", "Scrapper", "{5E5682EA-828D-4668-ACA3-BC3D9A05953B}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scraper", "Scraper", "{5E5682EA-828D-4668-ACA3-BC3D9A05953B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{129908D7-1777-4CF9-AD26-356773677DF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.API.Tests", "RTL.TVMaze.API.Tests\RTL.TVMaze.API.Tests.csproj", "{63EABC2C-9AEB-4DC4-9BC2-A427D12FD6F0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.API.Tests", "RTL.TVMaze.API.Tests\RTL.TVMaze.API.Tests.csproj", "{63EABC2C-9AEB-4DC4-9BC2-A427D12FD6F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Application.Tests", "RTL.TVMaze.Application.Tests\RTL.TVMaze.Application.Tests.csproj", "{E10F39E6-5567-4468-AADA-B55C9723B9D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Application.Tests", "RTL.TVMaze.Application.Tests\RTL.TVMaze.Application.Tests.csproj", "{E10F39E6-5567-4468-AADA-B55C9723B9D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Scrapper.Application.Tests", "RTL.TVMaze.Scrapper.Application.Tests\RTL.TVMaze.Scrapper.Application.Tests.csproj", "{BF3368C0-80A9-4F2D-BE41-58F37CA6E64D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.Tests", "RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.Tests\RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.Tests.csproj", "{A726FAC9-8D7F-4FD0-8C1B-C4CA8B05B5D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.Tests", "RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.Tests\RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.Tests.csproj", "{A726FAC9-8D7F-4FD0-8C1B-C4CA8B05B5D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Scraper.Application.Contract", "RTL.TVMaze.Scraper.Application.Contract\RTL.TVMaze.Scraper.Application.Contract.csproj", "{E2FB4890-437E-4F0C-9648-22A8516F754F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTL.TVMaze.Scraper.Application.Contract", "RTL.TVMaze.Scraper.Application.Contract\RTL.TVMaze.Scraper.Application.Contract.csproj", "{E2FB4890-437E-4F0C-9648-22A8516F754F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RTL.TVMaze.Scraper.Application.Tests", "RTL.TVMaze.Scraper.Application.Tests\RTL.TVMaze.Scraper.Application.Tests.csproj", "{AE371D75-5BFE-4B04-8D3D-88007ED084AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,10 +79,6 @@ Global
 		{E10F39E6-5567-4468-AADA-B55C9723B9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E10F39E6-5567-4468-AADA-B55C9723B9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E10F39E6-5567-4468-AADA-B55C9723B9D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BF3368C0-80A9-4F2D-BE41-58F37CA6E64D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BF3368C0-80A9-4F2D-BE41-58F37CA6E64D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BF3368C0-80A9-4F2D-BE41-58F37CA6E64D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BF3368C0-80A9-4F2D-BE41-58F37CA6E64D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A726FAC9-8D7F-4FD0-8C1B-C4CA8B05B5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A726FAC9-8D7F-4FD0-8C1B-C4CA8B05B5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A726FAC9-8D7F-4FD0-8C1B-C4CA8B05B5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -91,6 +87,10 @@ Global
 		{E2FB4890-437E-4F0C-9648-22A8516F754F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2FB4890-437E-4F0C-9648-22A8516F754F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2FB4890-437E-4F0C-9648-22A8516F754F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE371D75-5BFE-4B04-8D3D-88007ED084AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE371D75-5BFE-4B04-8D3D-88007ED084AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE371D75-5BFE-4B04-8D3D-88007ED084AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE371D75-5BFE-4B04-8D3D-88007ED084AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -105,9 +105,9 @@ Global
 		{422F5BA1-09D5-4228-8286-30CEC4AC9648} = {5E5682EA-828D-4668-ACA3-BC3D9A05953B}
 		{63EABC2C-9AEB-4DC4-9BC2-A427D12FD6F0} = {129908D7-1777-4CF9-AD26-356773677DF6}
 		{E10F39E6-5567-4468-AADA-B55C9723B9D9} = {129908D7-1777-4CF9-AD26-356773677DF6}
-		{BF3368C0-80A9-4F2D-BE41-58F37CA6E64D} = {5E5682EA-828D-4668-ACA3-BC3D9A05953B}
 		{A726FAC9-8D7F-4FD0-8C1B-C4CA8B05B5D6} = {5E5682EA-828D-4668-ACA3-BC3D9A05953B}
 		{E2FB4890-437E-4F0C-9648-22A8516F754F} = {5E5682EA-828D-4668-ACA3-BC3D9A05953B}
+		{AE371D75-5BFE-4B04-8D3D-88007ED084AD} = {5E5682EA-828D-4668-ACA3-BC3D9A05953B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CF3BE4FC-0748-4F4E-8088-204CB335B77D}
