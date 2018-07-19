@@ -5,11 +5,11 @@ using RTL.TVMaze.Application.Dependencies.Contract;
 
 namespace RTL.TVMaze.Application
 {
-    public class CastService : ICastService
+    public class ShowService : IShowService
     {
         private IDataStorage _dataStorage;
 
-        public CastService(IDataStorage dataStorage)
+        public ShowService(IDataStorage dataStorage)
         {
             _dataStorage = dataStorage;
         }
