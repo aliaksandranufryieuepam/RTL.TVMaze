@@ -18,7 +18,7 @@ namespace RTL.TVMaze.Scraper.Function
         }
 
         [FunctionName("TimerTriggerHandler")]
-        public static async Task Run([TimerTrigger("0 */1 * * * *")]TimerInfo myTimer, TraceWriter log)
+        public static async Task Run([TimerTrigger("0 */10 * * * *")]TimerInfo myTimer, TraceWriter log)
         {
             var client = new TVMazeClient(HttpClient);
 
