@@ -35,7 +35,7 @@ namespace RTL.TVMaze.Scrapper.Application.Tests
             await scraper.RunAsync();
 
             // Assert
-            await storage.Received(updates.Length).InsertOrUpdateAsync(Arg.Any<Show>());
+            await storage.Received(updates.Length).InsertOrUpdateAsync(Arg.Any<ShowWithLastUpdatedTime>());
         }
     }
 }
