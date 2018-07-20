@@ -1,8 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
     <UserSecretsId>b7f9aacc-b3d9-4b36-bebf-7af74f70dfef</UserSecretsId>
   </PropertyGroup>
 
@@ -12,6 +11,13 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RTL.TVMaze.Application.Contract\RTL.TVMaze.Application.Contract.csproj" />
+    <ProjectReference Include="..\RTL.TVMaze.Application.Dependencies.Contract\RTL.TVMaze.Application.Dependencies.Contract.csproj" />
+    <ProjectReference Include="..\RTL.TVMaze.Application.Dependencies.SqlDataStorage\RTL.TVMaze.Application.Dependencies.SqlDataStorage.csproj" />
+    <ProjectReference Include="..\RTL.TVMaze.Application\RTL.TVMaze.Application.csproj" />
   </ItemGroup>
 
 </Project>

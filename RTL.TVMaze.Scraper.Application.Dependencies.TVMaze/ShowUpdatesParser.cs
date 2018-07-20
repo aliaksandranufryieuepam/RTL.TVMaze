@@ -19,7 +19,7 @@ namespace RTL.TVMaze.Scraper.Application.Dependencies.TVMaze
                     return new ShowUpdate
                     {
                         Id = id,
-                        LastUpdateTime = unixTimeStamp.ToDateTime()
+                        LastUpdateTime = unixTimeStamp
                     };
                 });
 

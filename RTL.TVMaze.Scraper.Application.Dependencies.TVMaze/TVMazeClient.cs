@@ -10,8 +10,6 @@ namespace RTL.TVMaze.Scraper.Application.Dependencies.TVMaze
     public class TVMazeClient : ITVMazeClient
     {
         private const string host = "http://api.tvmaze.com";
-        private const string updatesUrl = "/updates/shows";
-        private const string showsUrl = "/shows/1?embed=cast";
 
         private HttpClient _httpClient;
 
@@ -22,7 +20,7 @@ namespace RTL.TVMaze.Scraper.Application.Dependencies.TVMaze
 
         public async Task<ShowUpdate[]> GetShowUpdatesAsync()
         {
-            var response = await _httpClient.GetAsync($"{host}{updatesUrl}");
+            var response = await _httpClient.GetAsync($"{host}/updates/shows");
 
             var json = await response.Content.ReadAsStringAsync();
 
@@ -33,7 +31,7 @@ namespace RTL.TVMaze.Scraper.Application.Dependencies.TVMaze
 
         public async Task<Show> GetShowAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"{host}{showsUrl}");
+            var response = await _httpClient.GetAsync($"{host}/shows/{id}?embed=cast");
 
             var json = await response.Content.ReadAsStringAsync();
 

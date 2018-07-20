@@ -18,7 +18,7 @@ namespace RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.Tests
             updates.Should().NotBeNull();
             updates.Length.Should().Be(1);
             updates.Single().Id.Should().Be(1);
-            updates.Single().LastUpdateTime.Should().Be(new DateTime(2018, 1, 1));
+            updates.Single().LastUpdateTime.Should().Be(firstJanuary2018);
         }
 
         [Fact]

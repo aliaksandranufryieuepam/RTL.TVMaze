@@ -5,6 +5,6 @@ namespace RTL.TVMaze.Application.Contract
 {
     public interface IShowService
     {
-        Task<Show[]> GetShows(int take, int skip = 0);
+        Task<Show[]> GetShowsAsync(int take, int skip = 0);
     }
 }

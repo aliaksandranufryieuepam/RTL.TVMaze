@@ -14,7 +14,7 @@ namespace RTL.TVMaze.Application
             _dataStorage = dataStorage;
         }
 
-        public async Task<Show[]> GetShows(int take, int skip = 0)
+        public async Task<Show[]> GetShowsAsync(int take, int skip = 0)
         {
             var shows = await _dataStorage.GetShowsAsync(take, skip);
 

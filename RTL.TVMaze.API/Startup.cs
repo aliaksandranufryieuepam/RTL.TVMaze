@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using RTL.TVMaze.Application;
+using RTL.TVMaze.Application.Contract;
+using RTL.TVMaze.Application.Dependencies.Contract;
+using RTL.TVMaze.Application.Dependencies.SqlDataStorage;
 
 namespace RTL.TVMaze.API
 {
@@ -25,6 +22,11 @@ namespace RTL.TVMaze.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            string connectionString = Configuration.GetConnectionString("TVMazeDatabase");
+
+            services.AddTransient<IDataStorage>(serviceProvider => new DataStorage(connectionString));
+            services.AddTransient<IShowService, ShowService>();
+            
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

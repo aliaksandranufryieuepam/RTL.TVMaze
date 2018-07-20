@@ -3,13 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "hostingPlanName": {
-      "value": null
+      "value": "RTL.TVMaze"
     },
     "administratorLogin": {
-      "value": null
+      "value": "tvmaze"
     },
     "databaseName": {
-      "value": null
+      "value": "TVMaze"
+    },
+    "administratorLoginPassword": {
+      "value": "TVMaze-password!"
     }
   }
 }

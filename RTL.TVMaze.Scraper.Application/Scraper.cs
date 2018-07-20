@@ -22,7 +22,7 @@ namespace RTL.TVMaze.Scraper.Application
         {
             ShowUpdate[] updates = await _client.GetShowUpdatesAsync();
 
-            DateTime? lastUpdateTime = await _dataStorage.GetLastUpdateTimeAsync();
+            int? lastUpdateTime = await _dataStorage.GetLastUpdateTimeAsync();
 
             Func<ShowUpdate, bool> predicate;
             
@@ -38,7 +38,6 @@ namespace RTL.TVMaze.Scraper.Application
             var outdatedShows = updates
                 .Where(predicate)
                 .OrderBy(x => x.LastUpdateTime)
-                .Select(x => x.Id)
                 .ToArray();
 
             foreach (var show in outdatedShows)
@@ -47,18 +46,23 @@ namespace RTL.TVMaze.Scraper.Application
             }
         }
 
-        private async Task UpdateShowAsync(int id, int retryCount = 3)
+        private async Task UpdateShowAsync(ShowUpdate showUpdate, int retryCount = 3)
         {
             try
             {
-                var show = await _client.GetShowAsync(id);
-                await _dataStorage.InsertOrUpdateAsync(show);
+                var show = await _client.GetShowAsync(showUpdate.Id);
+
+                await _dataStorage.InsertOrUpdateAsync(new ShowWithLastUpdatedTime
+                {
+                    Show = show,
+                    LastUpdateTime = showUpdate.LastUpdateTime
+                });
             }
             catch (Exception)
             {
                 if (retryCount > 0)
                 {
-                    await UpdateShowAsync(id, retryCount - 1);
+                    await UpdateShowAsync(showUpdate, retryCount - 1);
                 }
 
                 // TODO: send a message to a queue to retry to update the show later or just log the fail

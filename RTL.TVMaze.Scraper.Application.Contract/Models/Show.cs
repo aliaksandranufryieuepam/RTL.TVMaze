@@ -7,6 +7,5 @@ namespace RTL.TVMaze.Scraper.Application.Contract.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public Cast[] Casts { get; set; }
-        public DateTime LastUpdateTime { get; set; }
     }
 }
