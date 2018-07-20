@@ -34,7 +34,7 @@ FROM (
 	SELECT    s.Model, ROW_NUMBER() OVER(ORDER BY s.Id) AS RowNumber
     FROM    Shows s) s
 WHERE    RowNumber > @StartRow
-    AND RowNumber < @EndRow", new { skip, lastRow });
+    AND RowNumber <= @EndRow", new { skip, lastRow });
 
                 return shows.Select(x => JsonConvert.DeserializeObject<Application.Contract.Models.Show>(x)).ToArray();
             }
