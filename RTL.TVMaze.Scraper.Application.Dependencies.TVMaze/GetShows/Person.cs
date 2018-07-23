@@ -12,6 +12,7 @@ namespace RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.GetShows
         public string Name { get; set; }
 
         [JsonProperty("birthday")]
+        [JsonConverter(typeof(BirthdayJsonConverter))]
         public DateTime? Birthday { get; set; }
     }
 }
