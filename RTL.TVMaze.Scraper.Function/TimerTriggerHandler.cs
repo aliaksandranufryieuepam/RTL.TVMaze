@@ -10,26 +10,22 @@ namespace RTL.TVMaze.Scraper.Function
 {
     public static class TimerTriggerHandler
     {
-        private static HttpClient HttpClient;
-
-        static TimerTriggerHandler()
-        {
-            HttpClient = new HttpClient();
-        }
-
         [FunctionName("TimerTriggerHandler")]
         public static async Task Run([TimerTrigger("0 */10 * * * *")]TimerInfo myTimer, TraceWriter log)
         {
-            var client = new TVMazeClient(HttpClient);
+            using (var httpClient = new HttpClient())
+            {
+                var client = new TVMazeClient(httpClient);
 
-            var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings:TVMazeDatabase", EnvironmentVariableTarget.Process);
+                var connectionString = Environment.GetEnvironmentVariable("ConnectionStrings:TVMazeDatabase", EnvironmentVariableTarget.Process);
 
-            var contextFactory = new TVMazeContextFactory(connectionString);
-            var dataStorage = new DataStorage(contextFactory);
+                var contextFactory = new TVMazeContextFactory(connectionString);
+                var dataStorage = new DataStorage(contextFactory);
 
-            var scraper = new Application.Scraper(client, dataStorage);
+                var scraper = new Application.Scraper(client, dataStorage);
 
-            await scraper.RunAsync();
+                await scraper.RunAsync();
+            }
         }
     }
 }
