@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RTL.TVMaze.Scraper.Application.Contract\RTL.TVMaze.Scraper.Application.Contract.csproj" />
+    <ProjectReference Include="..\RTL.TVMaze.Scraper.Application.Dependencies.SqlDataStorage\RTL.TVMaze.Scraper.Application.Dependencies.SqlDataStorage.csproj" />
+    <ProjectReference Include="..\RTL.TVMaze.Scraper.Application.Dependencies.TVMaze\RTL.TVMaze.Scraper.Application.Dependencies.TVMaze.csproj" />
+    <ProjectReference Include="..\RTL.TVMaze.Scraper.Application\RTL.TVMaze.Scraper.Application.csproj" />
+  </ItemGroup>
+
+</Project>
