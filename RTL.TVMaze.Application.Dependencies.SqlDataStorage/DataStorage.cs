@@ -10,6 +10,7 @@ namespace RTL.TVMaze.Application.Dependencies.SqlDataStorage
     public class DataStorage : IDataStorage
     {
         private string _connectionString;
+        private const string ShowsTableName = "Shows";
 
         public DataStorage(string connectionString)
         {
@@ -29,10 +30,10 @@ DECLARE  @EndRow INT
 SET    @StartRow = @{nameof(skip)}
 SET @EndRow = @{nameof(lastRow)}
 
-SELECT Model
+SELECT {nameof(SqlDataStorage.Show.Model)}
 FROM (
-	SELECT    s.Model, ROW_NUMBER() OVER(ORDER BY s.Id) AS RowNumber
-    FROM    Shows s) s
+	SELECT    s.{nameof(SqlDataStorage.Show.Model)}, ROW_NUMBER() OVER(ORDER BY s.Id) AS RowNumber
+    FROM    {ShowsTableName} s) s
 WHERE    RowNumber > @StartRow
     AND RowNumber <= @EndRow", new { skip, lastRow });
 
